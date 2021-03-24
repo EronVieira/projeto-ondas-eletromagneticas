@@ -1,0 +1,32 @@
+main
+	__CC2DW
+		____DoICP
+	SPI1_Init
+	Config_NRF
+		SPI1_Write
+	Lcd_Init
+		Delay_5500us
+		Delay_1us
+	Lcd_Cmd
+		Delay_1us
+		Delay_5500us
+		Delay_50us
+	Lcd_Out
+		Lcd_Cmd
+			Delay_1us
+			Delay_5500us
+			Delay_50us
+		Lcd_Chr_CP
+			Lcd_Cmd
+				Delay_1us
+				Delay_5500us
+				Delay_50us
+	SPI1_Read
+	Byte2Double
+		NRM4032
+			RES032
+			SETFUN32
+			FIXSIGN32
+			SETFOV32
+	SPI1_Write
+interrupt

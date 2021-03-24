@@ -1,0 +1,10 @@
+main
+	__CC2DW
+		____DoICP
+	SPI1_Init
+	Config_NRF
+		SPI1_Write
+	Send_NRF
+		SPI1_Write
+	SPI1_Write
+interrupt
